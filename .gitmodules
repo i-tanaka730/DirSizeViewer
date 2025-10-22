@@ -1,0 +1,3 @@
+[submodule "SimpleLogger"]
+	path = SimpleLogger
+	url = https://github.com/i-tanaka730/SimpleLogger
