@@ -14,8 +14,6 @@ public partial class MainWindow : Window
 
     public MainWindow()
     {
-        SimpleLogger.Logger.Log("アプリケーションが起動しました。");
-
         InitializeComponent();
         DirectoryItems = new ObservableCollection<DirectoryItem>();
         FilesDataGrid.ItemsSource = DirectoryItems;
@@ -23,6 +21,8 @@ public partial class MainWindow : Window
 
     private async void SelectFolderButton_Click(object sender, RoutedEventArgs e)
     {
+        SimpleLogger.Logger.Log("ボタンが押されました");
+
         var dialog = new CommonOpenFileDialog
         {
             IsFolderPicker = true

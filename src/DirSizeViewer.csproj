@@ -12,4 +12,8 @@
     <PackageReference Include="WindowsAPICodePack" Version="8.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleLogger\SimpleLogger.csproj" />
+  </ItemGroup>
+
 </Project>
