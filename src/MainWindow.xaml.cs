@@ -14,6 +14,8 @@ public partial class MainWindow : Window
 
     public MainWindow()
     {
+        SimpleLogger.Logger.Log("アプリケーションが起動しました。");
+
         InitializeComponent();
         DirectoryItems = new ObservableCollection<DirectoryItem>();
         FilesDataGrid.ItemsSource = DirectoryItems;
